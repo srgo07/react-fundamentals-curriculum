@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-header {
+    color: white;
+    font-weight: lighter;
+    font-size: 60px;
+}
+.app-container {
+    height: 100%;
+    background-image: url(./images/pattern.svg);
+}
+.weather-container {
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+.get-weather-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-input {
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #cbcbcb;
+    padding: 10px;
+    font-size: 24px;
+}
+.get-weather {
+    border-width: 1px;
+    background: #56b859;
+    border-radius: 5px;
+    border-color: #45ae48;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
