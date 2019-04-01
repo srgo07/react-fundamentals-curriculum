@@ -6,9 +6,23 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.header-container {
+    height: 98px;
+    font-size: 60px;
+    font-weight: bold;
+    background: #ff6b45;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .content-header {
     color: white;
     font-weight: lighter;
+    margin-top: 0px;
     font-size: 60px;
 }
 .app-container {
@@ -20,7 +34,13 @@ body {
     top: 30%;
     text-align: center;
 }
-.get-weather-component {
+
+/* .get-weather-componentrow {
+    flex-direction: row;
+    display: inline;
+} */
+
+.get-weather-componentcolumn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +51,7 @@ body {
     border-color: #cbcbcb;
     padding: 10px;
     font-size: 24px;
+    margin-right: 5px;
 }
 .get-weather {
     border-width: 1px;

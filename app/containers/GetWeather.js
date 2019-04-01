@@ -1,13 +1,15 @@
 const React = require('react');
-const PropTypes = require('prop-types');
+const {string} = require('prop-types');
+
+
 
 class GetWeather extends React.Component {
-    constructor (props){
+    constructor (props) {
         super(props);
     }
     render() {
         return (
-            <div className="get-weather-component"
+            <div className={'get-weather-component' + this.props.direction}
                 style={{flexDirection: this.props.direction}}>
                 <input className="location-input" placeholder="St. George, Utah" />
                 <button className="get-weather" >Get Weather</button>
@@ -20,7 +22,7 @@ GetWeather.defaultProps  = {
     direction: 'column'
 }
 GetWeather.proptypes = {
-    direction: PropTypes.string
+    direction: string
 }
 
 module.exports = GetWeather;
